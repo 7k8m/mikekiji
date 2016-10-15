@@ -257,12 +257,13 @@
       var modalImg = document.getElementById("img01");
       var captionText = document.getElementById("caption");
 
-      img.onclick = function(){
+      $( img ).click(
+        function(){
           modal.style.display = "block";
           modalImg.src = this.src;
           captionText.innerHTML = desc.innerHTML;
-      }
-
+        }
+      );
     }
   );
 

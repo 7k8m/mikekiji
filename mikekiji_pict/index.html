@@ -241,15 +241,17 @@
 
 <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
 <script>
+  //scroll reveal
   window.sr = ScrollReveal();
   sr.reveal('.sr');
 
-  // Get the modal
+
+  // Modal Picture
   var modal = document.getElementById('myModal');
 
   $('.row div').each(
     function( index, element ){
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
+
       var cellDiv = $(element);
       var img = cellDiv.find("img")[0];
       var desc = cellDiv.find("p")[0];
